@@ -20,8 +20,10 @@ def self.all
 end
 def self.create_table
   sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS (
-  Student,
+  CREATE TABLE IF NOT EXISTS student (
+  id PRIMARY KEY,
+  name TEXT,
+  grade INTEGER
   )
   
   
