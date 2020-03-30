@@ -27,7 +27,7 @@ def self.create_table
   )
   SQL
   
-  DB[:conn].excute(sql)
+  DB[:conn].execute(sql)
 end
 
 def self .drop_table
