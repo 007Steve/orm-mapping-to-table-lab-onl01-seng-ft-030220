@@ -7,11 +7,12 @@ class Student
   attr_accessor :name , :grade
   attr_reader :id
   
+  @@all = []
   def initilaize(name,grade,id=nil )
   @name = name 
   @grade = grade
   @id = id
-
+@@all << self
 end
 
 def self.create_table
