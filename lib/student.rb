@@ -8,7 +8,7 @@ class Student
   attr_reader :id
   
   @@all = []
-  def initilaize(name,grade,id=nil )
+  def initialize(name,grade,id=nil )
   @name = name 
   @grade = grade
   @id = id
