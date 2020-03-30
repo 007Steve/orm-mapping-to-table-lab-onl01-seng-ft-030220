@@ -38,10 +38,13 @@ DROP TABLE students;
 end
 
 def save
-  sql = <<-SQL
+      sql = <<-SQL
       INSERT INTO students (name, grade)
         VALUES (?, ?)
     SQL
+
+    DB[:conn].execute(sql, self.name, self.grade)
+
 end
 
 def self.create
