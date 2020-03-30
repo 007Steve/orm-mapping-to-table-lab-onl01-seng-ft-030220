@@ -31,7 +31,10 @@ def self.create_table
 end
 
 def self .drop_table
+  sql = <<-SQL
   
+  
+  SQL
 end
 
 def save
