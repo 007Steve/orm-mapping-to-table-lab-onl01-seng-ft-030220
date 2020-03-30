@@ -25,8 +25,9 @@ def self.create_table
   name TEXT,
   grade INTEGER
   )
+  SQL
   
-  
+  [:conn]
 end
 
 def self .drop_table
